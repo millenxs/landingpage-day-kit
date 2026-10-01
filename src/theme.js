@@ -24,7 +24,7 @@ let theme = createTheme({
   },
   shape: { borderRadius: 16 },
   typography: {
-    fontFamily: '"Lexend", system-ui, sans-serif',
+    fontFamily: '"Lexend", "Lexend Fallback", system-ui, sans-serif',
     h1: { fontWeight: 700, fontSize: '3.4rem', lineHeight: 1.08, letterSpacing: '-0.02em' },
     h2: { fontWeight: 700, fontSize: '2.5rem', lineHeight: 1.15, letterSpacing: '-0.01em' },
     h3: { fontWeight: 700, fontSize: '1.3rem', lineHeight: 1.3 },

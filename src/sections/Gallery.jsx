@@ -73,7 +73,7 @@ export default function Gallery() {
             <IconButton onClick={() => setOpen(null)} aria-label="Fechar" sx={{ position: 'absolute', top: 8, right: 8, zIndex: 2, bgcolor: '#fff', '&:hover': { bgcolor: '#f3f3f3' } }}>
               <CloseRoundedIcon />
             </IconButton>
-            <LazyImage src={`/img/${open.src}.webp`} alt={open.label} eager />
+            <LazyImage src={`/img/${p.src}.webp`} alt="" />
           </Box>
         )}
       </Dialog>

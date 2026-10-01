@@ -7,21 +7,34 @@
     <meta name="description" content="37 páginas para imprimir: rotinas visuais, emoções, histórias sociais, cantinho da calma e desenhos para colorir. Baixe 5 atividades grátis." />
     <meta name="theme-color" content="#6E5BC7" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://landingpage-day-kit.vercel.app/" />
+
+    <!-- Fonte Lexend hospedada no próprio site (carrega mais rápido e sem "pulo" de layout) -->
+    <link rel="preload" href="/fonts/lexend-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/lexend-700.woff2" as="font" type="font/woff2" crossorigin />
+    <style>
+      @font-face { font-family: 'Lexend'; font-weight: 400; font-display: swap; src: url(/fonts/lexend-400.woff2) format('woff2'); }
+      @font-face { font-family: 'Lexend'; font-weight: 600; font-display: swap; src: url(/fonts/lexend-600.woff2) format('woff2'); }
+      @font-face { font-family: 'Lexend'; font-weight: 700; font-display: swap; src: url(/fonts/lexend-700.woff2) format('woff2'); }
+      @font-face { font-family: 'Lexend Fallback'; src: local('Arial'); size-adjust: 108%; ascent-override: 92%; descent-override: 23%; line-gap-override: 0%; }
+      body { margin: 0; background: #FFFBF2; }
+    </style>
 
     <!-- Compartilhamento (WhatsApp, Facebook) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Meu Dia Tranquilo | Kit de atividades visuais" />
     <meta property="og:description" content="Rotinas, emoções, histórias sociais e calma em 37 páginas para imprimir. Baixe 5 atividades grátis." />
-    <meta property="og:image" content="/img/og.jpg" />
+    <meta property="og:url" content="https://landingpage-day-kit.vercel.app/" />
+    <meta property="og:image" content="https://landingpage-day-kit.vercel.app/img/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Meu Dia Tranquilo" />
     <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Imagem principal carrega primeiro (o resto é lazy) -->
     <link rel="preload" as="image" href="/img/capa.webp" type="image/webp" />
 
-    <!--
-      META PIXEL: cole aqui o código do seu Pixel (Gerenciador de Eventos > Pixel > Instalar manualmente).
-      Os botões da página já disparam os eventos "Lead" (download da amostra) e "InitiateCheckout" (compra).
-    -->
+    <!-- META PIXEL: cole aqui o código do seu Pixel -->
   </head>
   <body>
     <div id="root"></div>

@@ -47,9 +47,9 @@ export default function Hero() {
             <Box component="p" sx={{ fontSize: { xs: 17, md: 19 }, color: 'text.secondary', mt: 3, mb: 4, maxWidth: 540, mx: { xs: 'auto', md: 0 } }}>
               Rotinas visuais, cartões de emoções, histórias sociais e cantinho da calma em <b>37 páginas prontas para imprimir</b>. Traço limpo e sem poluição visual, para crianças de 3 a 8 anos.
             </Box>
-            <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} justifyContent={{ xs: 'center', md: 'flex-start' }}>
-              <BuyButton location="hero" />
-              <SampleButton>Baixar 5 atividades grátis</SampleButton>
+            <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} useFlexGap flexWrap="wrap" justifyContent={{ xs: 'center', md: 'flex-start' }}>
+              <BuyButton location="hero">Comprar o kit · R$ 19,90</BuyButton>
+              <SampleButton>Baixar amostra grátis</SampleButton>
             </Stack>
             <Stack direction="row" spacing={{ xs: 2, sm: 3 }} useFlexGap flexWrap="wrap" justifyContent={{ xs: 'center', md: 'flex-start' }}
                    sx={{ mt: 3.5, color: 'text.secondary', fontSize: 14, '& svg': { fontSize: 20, color: 'primary.main' } }}>

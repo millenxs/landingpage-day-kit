@@ -55,9 +55,8 @@ export function BuyButton({ children, size = 'large', fullWidth, sx, location = 
     <Button
       variant="contained" color="secondary" size={size} fullWidth={fullWidth}
       href={CHECKOUT_URL} startIcon={<ShoppingCartRoundedIcon />}
-      style={{ whiteSpace: 'nowrap' }}
       onClick={() => track('InitiateCheckout', { content_name: 'Meu Dia Tranquilo', value: 19.9, currency: 'BRL', location })}
-      sx={{ color: colors.ink, boxShadow: `0 5px 0 #C99A16`, '&:hover': { bgcolor: '#FFD25C', boxShadow: `0 5px 0 #C99A16` },
+      sx={{ whiteSpace: { sm: 'nowrap' }, minHeight: 44, color: colors.ink, boxShadow: `0 5px 0 #C99A16`, '&:hover': { bgcolor: '#FFD25C', boxShadow: `0 5px 0 #C99A16` },
             '&:active': { transform: 'translateY(3px)', boxShadow: `0 2px 0 #C99A16` }, ...sx }}
     >
       {children || `Quero o kit completo · R$ ${PRICE}`}
@@ -70,9 +69,8 @@ export function SampleButton({ children, variant = 'outlined', size = 'large', f
     <Button
       variant={variant} size={size} fullWidth={fullWidth}
       href={SAMPLE_PDF} download startIcon={<DownloadRoundedIcon />}
-      style={{ whiteSpace: 'nowrap' }}
       onClick={() => track('Lead', { content_name: 'Amostra grátis' })}
-      sx={{ borderWidth: 2, '&:hover': { borderWidth: 2 }, ...sx }}
+      sx={{ whiteSpace: { sm: 'nowrap' }, minHeight: 44, borderWidth: 2, '&:hover': { borderWidth: 2 }, ...sx }}
     >
       {children || 'Baixar amostra grátis'}
     </Button>
