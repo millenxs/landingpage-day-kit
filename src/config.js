@@ -6,7 +6,7 @@
 export const CHECKOUT_URL = 'https://pay.cakto.com.br/zvq2cs2_1162647'
 
 // PDF gratuito (fica na pasta /public)
-export const SAMPLE_PDF = '/Meu-Dia-Tranquilo-Amostra-Gratis.pdf'
+export const SAMPLE_PDF = '/Meu-Dia-Tranquilo-Amostra.pdf'
 
 export const PRICE = '19,90'
 export const BUMP_PRICE = '9,90'

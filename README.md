@@ -23,6 +23,6 @@ npm run dev
 
 ## Onde fica cada coisa
 
-- `public/Meu-Dia-Tranquilo-Amostra-Gratis.pdf`: PDF grátis baixado pelos botões
+- `public/Meu-Dia-Tranquilo-Amostra.pdf`: PDF grátis baixado pelos botões
 - `public/img/`: prévias das páginas (WebP, carregadas com lazy loading)
 - `src/sections/`: cada seção da página (as que ficam abaixo da primeira tela carregam sob demanda)
