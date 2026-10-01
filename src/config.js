@@ -3,10 +3,10 @@
 // =====================================================
 
 // Link de checkout do produto na Cakto (Produtos > seu produto > Links)
-export const CHECKOUT_URL = 'https://pay.cakto.com.br/SEU-LINK'
+export const CHECKOUT_URL = 'https://pay.cakto.com.br/zvq2cs2_1162647'
 
 // PDF gratuito (fica na pasta /public)
-export const SAMPLE_PDF = '/amostra-gratis-meu-dia-tranquilo.pdf'
+export const SAMPLE_PDF = '/Meu-Dia-Tranquilo-Amostra-Gratis.pdf'
 
 export const PRICE = '19,90'
 export const BUMP_PRICE = '9,90'
